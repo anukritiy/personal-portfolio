@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="#top" class="logo">YN</a>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Software Development Intern</p>
+        <h1>Your Name<span class="cursor">_</span></h1>
+        <p class="hero-sub">I build web applications end to end — from database schema to the interface people actually touch. Currently interning at Prodigy Infotech.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">See my work</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-code" aria-hidden="true">
+        <div class="code-window">
+          <div class="code-dots"><span></span><span></span><span></span></div>
+          <pre><code><span class="tok-kw">const</span> <span class="tok-var">developer</span> = {
+  <span class="tok-prop">name</span>: <span class="tok-str">"Your Name"</span>,
+  <span class="tok-prop">role</span>: <span class="tok-str">"SDE Intern"</span>,
+  <span class="tok-prop">stack</span>: [<span class="tok-str">"Node"</span>, <span class="tok-str">"Express"</span>,
+    <span class="tok-str">"PostgreSQL"</span>, <span class="tok-str">"React"</span>],
+  <span class="tok-prop">status</span>: <span class="tok-str">"open to opportunities"</span>
+};</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-head">
+        <h2>About</h2>
+        <span class="section-rule"></span>
+      </div>
+      <div class="about-grid">
+        <p class="about-text">
+          I'm a software development intern who likes taking a feature from a blank schema to something a
+          user can log into and trust with their data. Most of my recent work has centered on backend
+          fundamentals — authentication, data modeling, and building systems that hold up under real use —
+          alongside the front-end work needed to make them usable.
+        </p>
+        <p class="about-text">
+          I'm comfortable moving between the database, the server, and the interface, and I care about
+          writing code that the next person (often future me) can actually read. Outside of assigned
+          projects, I like picking small problems apart until I understand why the obvious fix wasn't
+          the right one.
+        </p>
+        <ul class="about-facts">
+          <li><span>Based in</span>Kanpur, India</li>
+          <li><span>Focus</span>Full-stack web development</li>
+          <li><span>Currently</span>Interning at Prodigy Infotech</li>
+          <li><span>Tools</span>Node.js · Express · PostgreSQL · React · Git</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="section-head">
+        <h2>Education</h2>
+        <span class="section-rule"></span>
+      </div>
+      <ul class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-date">2022 — 2026</div>
+          <div class="timeline-body">
+            <h3>B.Tech in Computer Science</h3>
+            <p class="timeline-place">Your College / University Name</p>
+            <p class="timeline-desc">
+              Coursework in data structures, database systems, and web technologies. Built the projects
+              listed below as part of coursework and independent practice.
+            </p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-date">2022</div>
+          <div class="timeline-body">
+            <h3>Higher Secondary (PCM)</h3>
+            <p class="timeline-place">Your School Name</p>
+            <p class="timeline-desc">Physics, Chemistry, Mathematics.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <span class="section-rule"></span>
+      </div>
+      <ul class="project-list">
+
+        <li class="project-item">
+          <div class="project-meta">
+            <h3>Secure Authentication System</h3>
+            <p class="project-stack">Node.js · Express · PostgreSQL</p>
+          </div>
+          <p class="project-desc">
+            A signup and login system with protected routes that only render after authentication.
+            Covers password hashing and session handling, built as a Prodigy Infotech task.
+          </p>
+          <div class="project-links">
+            <a href="#">Code →</a>
+          </div>
+        </li>
+
+        <li class="project-item">
+          <div class="project-meta">
+            <h3>Local Store E-Commerce Site</h3>
+            <p class="project-stack">In progress</p>
+          </div>
+          <p class="project-desc">
+            Product listings with images, descriptions, and pricing, plus shopping cart functionality
+            for a local store. Sort and filter support planned as a follow-on feature.
+          </p>
+          <div class="project-links">
+            <a href="#">Code →</a>
+          </div>
+        </li>
+
+        <li class="project-item">
+          <div class="project-meta">
+            <h3>CRUD Task Manager</h3>
+            <p class="project-stack">Full-stack CRUD</p>
+          </div>
+          <p class="project-desc">
+            Create, read, update, and delete workflows over a persistent data store, built as an
+            earlier Prodigy Infotech project.
+          </p>
+          <div class="project-links">
+            <a href="#">Code →</a>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-contact">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <span class="section-rule"></span>
+      </div>
+      <div class="contact-grid">
+        <p class="contact-text">
+          Open to internship and entry-level opportunities in full-stack development.
+          The fastest way to reach me is email.
+        </p>
+        <ul class="contact-list">
+          <li><span>Email</span><a href="mailto:you@example.com">you@example.com</a></li>
+          <li><span>GitHub</span><a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a></li>
+          <li><span>LinkedIn</span><a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">linkedin.com/in/yourusername</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Built by Your Name · <span id="year"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const toggle = document.getElementById('navToggle');
+    const nav = document.querySelector('.nav');
+    toggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+    document.querySelectorAll('.nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="#top" class="logo">YN</a>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Software Development Intern</p>
+        <h1>Your Name<span class="cursor">_</span></h1>
+        <p class="hero-sub">I build web applications end to end — from database schema to the interface people actually touch. Currently interning at Prodigy Infotech.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">See my work</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-code" aria-hidden="true">
+        <div class="code-window">
+          <div class="code-dots"><span></span><span></span><span></span></div>
+          <pre><code><span class="tok-kw">const</span> <span class="tok-var">developer</span> = {
+  <span class="tok-prop">name</span>: <span class="tok-str">"Your Name"</span>,
+  <span class="tok-prop">role</span>: <span class="tok-str">"SDE Intern"</span>,
+  <span class="tok-prop">stack</span>: [<span class="tok-str">"Node"</span>, <span class="tok-str">"Express"</span>,
+    <span class="tok-str">"PostgreSQL"</span>, <span class="tok-str">"React"</span>],
+  <span class="tok-prop">status</span>: <span class="tok-str">"open to opportunities"</span>
+};</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-head">
+        <h2>About</h2>
+        <span class="section-rule"></span>
+      </div>
+      <div class="about-grid">
+        <p class="about-text">
+          I'm a software development intern who likes taking a feature from a blank schema to something a
+          user can log into and trust with their data. Most of my recent work has centered on backend
+          fundamentals — authentication, data modeling, and building systems that hold up under real use —
+          alongside the front-end work needed to make them usable.
+        </p>
+        <p class="about-text">
+          I'm comfortable moving between the database, the server, and the interface, and I care about
+          writing code that the next person (often future me) can actually read. Outside of assigned
+          projects, I like picking small problems apart until I understand why the obvious fix wasn't
+          the right one.
+        </p>
+        <ul class="about-facts">
+          <li><span>Based in</span>Kanpur, India</li>
+          <li><span>Focus</span>Full-stack web development</li>
+          <li><span>Currently</span>Interning at Prodigy Infotech</li>
+          <li><span>Tools</span>Node.js · Express · PostgreSQL · React · Git</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="section-head">
+        <h2>Education</h2>
+        <span class="section-rule"></span>
+      </div>
+      <ul class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-date">2022 — 2026</div>
+          <div class="timeline-body">
+            <h3>B.Tech in Computer Science</h3>
+            <p class="timeline-place">Your College / University Name</p>
+            <p class="timeline-desc">
+              Coursework in data structures, database systems, and web technologies. Built the projects
+              listed below as part of coursework and independent practice.
+            </p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-date">2022</div>
+          <div class="timeline-body">
+            <h3>Higher Secondary (PCM)</h3>
+            <p class="timeline-place">Your School Name</p>
+            <p class="timeline-desc">Physics, Chemistry, Mathematics.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <span class="section-rule"></span>
+      </div>
+      <ul class="project-list">
+
+        <li class="project-item">
+          <div class="project-meta">
+            <h3>Secure Authentication System</h3>
+            <p class="project-stack">Node.js · Express · PostgreSQL</p>
+          </div>
+          <p class="project-desc">
+            A signup and login system with protected routes that only render after authentication.
+            Covers password hashing and session handling, built as a Prodigy Infotech task.
+          </p>
+          <div class="project-links">
+            <a href="#">Code →</a>
+          </div>
+        </li>
+
+        <li class="project-item">
+          <div class="project-meta">
+            <h3>Local Store E-Commerce Site</h3>
+            <p class="project-stack">In progress</p>
+          </div>
+          <p class="project-desc">
+            Product listings with images, descriptions, and pricing, plus shopping cart functionality
+            for a local store. Sort and filter support planned as a follow-on feature.
+          </p>
+          <div class="project-links">
+            <a href="#">Code →</a>
+          </div>
+        </li>
+
+        <li class="project-item">
+          <div class="project-meta">
+            <h3>CRUD Task Manager</h3>
+            <p class="project-stack">Full-stack CRUD</p>
+          </div>
+          <p class="project-desc">
+            Create, read, update, and delete workflows over a persistent data store, built as an
+            earlier Prodigy Infotech project.
+          </p>
+          <div class="project-links">
+            <a href="#">Code →</a>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-contact">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <span class="section-rule"></span>
+      </div>
+      <div class="contact-grid">
+        <p class="contact-text">
+          Open to internship and entry-level opportunities in full-stack development.
+          The fastest way to reach me is email.
+        </p>
+        <ul class="contact-list">
+          <li><span>Email</span><a href="mailto:you@example.com">you@example.com</a></li>
+          <li><span>GitHub</span><a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a></li>
+          <li><span>LinkedIn</span><a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">linkedin.com/in/yourusername</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Built by Your Name · <span id="year"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const toggle = document.getElementById('navToggle');
+    const nav = document.querySelector('.nav');
+    toggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+    document.querySelectorAll('.nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+
+</body>
+</html>
